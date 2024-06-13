@@ -1,0 +1,61 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.centered {
+  text-align: center; /* This centers the text horizontally */
+  vertical-align: middle; /* This centers the text vertically */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.navbar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-right {
+  text-align: right;
+}
+
+.date {
+  font-size: 1em;
+}
+
+.time {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-right {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+  }
+}

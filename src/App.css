@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 20px;
+}
+.header-row th {
+  background-color: rgb(98, 9, 243);
+  color: white; /* Optional: to make the text more readable */
+}
+
+.table-container {
+  width: 60%;
+}
+.blue-violet-text {
+  color: rgb(98, 9, 243);
+}
+
+.name{
+  margin-top: 10px;
+  /* margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 10px; */
+}
+.ui{
+  margin-top: -2px;
+}
+
+.employee-container {
+  width: 25%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  height: 50%;
+}
+
+.growth{
+  width: 100%; /* Set width to 100% of its container */
+  height: 80%; /* Maintain aspect ratio */
+  max-width: 100px; 
+  
+}
+.id-image {
+  border-radius: 50%; /* This creates an oval shape */
+}
+.card-image {
+  width: 90%;
+  height: 200px; /* Adjust this value to fit the desired card height */
+  object-fit: cover;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.i{
+  margin-left: -5px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.increase {
+  color: green;
+}
+
+.decrease {
+  color: red;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.employee-details {
+  text-align: center;
+  margin-top: -15px;
+}
+
+.employee-details h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.employee-details h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.employee-details p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .employee-container {
+    margin-top: 20px;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+
+  .growth {
+    max-width: 80px;
+  }
+}
